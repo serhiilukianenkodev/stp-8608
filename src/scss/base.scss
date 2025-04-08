@@ -18,21 +18,27 @@
 }
 
 .main-title {
-  @include font(48, 48);
+  @include font(48, 58);
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 400;
   color: $_color_yellow;
   text-align: center;
+  margin-top: 24px;
 
   @include media(desktop) {
-    @include font(88, 88);
+    @include font(88, 106);
+    margin-top: 0;
   }
 }
 
 .section-title {
-  @include font(32, 32);
+  @include font(32, 38);
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 400;
   color: $_color_yellow;
   text-align: center;
 
   @include media(desktop) {
-    @include font(64, 64);
+    @include font(64, 77);
   }
 }

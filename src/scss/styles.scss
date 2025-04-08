@@ -1,19 +1,21 @@
 :root {
-  font-family: 'Lilita One', sans-serif;
+  // font-family: 'Lilita One', sans-serif;
+  font-family: 'Lora', serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  @include font(14, 14);
+  @include font(14, 18);
   color: $_main_color;
   background-color: $_main_bg_color;
 
   @include media(desktop) {
-    @include font(24, 24);
+    @include font(24, 30);
   }
 }
 
 @import './base.scss';
 @import './header.scss';
-@import './hero.scss';
+@import './home.scss';
 @import './game-overview.scss';
 @import './features.scss';
 @import './how-to-play.scss';

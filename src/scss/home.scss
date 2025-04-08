@@ -1,0 +1,79 @@
+.home .container {
+  padding-top: 84px;
+  @include media(desktop) {
+    padding-top: 160px;
+    display: flex;
+    gap: 24px;
+    align-items: start;
+  }
+}
+
+.home-logo {
+  @include media(desktop) {
+    width: 344px;
+    height: 350px;
+  }
+}
+
+.hero-subtitle {
+  @include font(32, 38);
+  font-weight: 500;
+  color: $_color_yellow;
+  text-align: center;
+  margin-top: 16px;
+
+  @include media(desktop) {
+    @include font(40, 48);
+    margin-top: 32px;
+  }
+}
+
+.btn-pmarket {
+  margin: 24px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  width: 215px;
+  padding: 20px;
+  border-radius: 16px;
+  font-size: 20px;
+  background-color: $_color_orange;
+
+  &:hover,
+  &:focus {
+    background-color: $_color_coral;
+  }
+
+  &:active {
+    background-color: #5d76d0;
+  }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    background-image: url('../img/logo_google-play-icon.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 35px;
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../img/logo_google-play-icon_2x.png');
+    }
+  }
+
+  @include media(desktop) {
+    width: 359px;
+    margin-top: 80px;
+    font-size: 24px;
+    gap: 8px;
+
+    &::before {
+      width: 42px;
+      height: 46px;
+    }
+  }
+}
