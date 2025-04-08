@@ -1,0 +1,38 @@
+.section {
+  padding: 16px 0;
+
+  @include media(desktop) {
+    padding: 48px 0;
+  }
+}
+
+.container {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    max-width: 1200px;
+    padding: 0 60px;
+  }
+}
+
+.main-title {
+  @include font(48, 48);
+  color: $_color_yellow;
+  text-align: center;
+
+  @include media(desktop) {
+    @include font(88, 88);
+  }
+}
+
+.section-title {
+  @include font(32, 32);
+  color: $_color_yellow;
+  text-align: center;
+
+  @include media(desktop) {
+    @include font(64, 64);
+  }
+}
