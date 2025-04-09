@@ -1,0 +1,34 @@
+.overview {
+}
+.overview .container {
+  background-image: url('../img/overview/picks.png'),
+    url(../img/overview/character.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 31px 67px, 96px 183px;
+  background-position: 0 -2px, 100% 80px;
+
+  @media (min-resolution: 192dpi) {
+    background-image: url('../img/overview/picks_2x.png'),
+      url(../img/overview/character_2x.png);
+  }
+
+  @include media(desktop) {
+    min-height: 464px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: 149px 319px, 244px 464px;
+    background-position: 60px 50%, 100% 50%;
+  }
+}
+
+.overview-content {
+  margin-top: 24px;
+  width: 205px;
+
+  @include media(desktop) {
+    width: 712px;
+    margin: 48px auto 0;
+  }
+}
