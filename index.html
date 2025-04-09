@@ -24,22 +24,70 @@
     <title>Royal Block Puzzle</title>
     
     <script type="module" crossorigin src="/stp-8608/commonHelpers2.js"></script>
-    <link rel="stylesheet" href="/stp-8608/assets/index-1ec3464a.css">
+    <link rel="stylesheet" href="/stp-8608/assets/index-3de70d12.css">
   </head>
   <body>
     <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <!-- <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+  <div class="container header-container">
+    <a href="./index.html">
+      <img
+        class="header-logo"
+        srcset="data:image/png;base64,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 1x, /stp-8608/assets/logo@2x-b1794469.png 2x"
+        src="data:image/png;base64,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"
+        alt="page logo"
+        width="40"
+        height="36"
+        loading="lazy"
+      />
+    </a>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul> -->
-  </nav>
+    <button class="header-burger-menu-btn">
+      <svg class="header-burger-menu-icon" width="32" height="32">
+        <use href="/stp-8608/assets/sprite-dc42a8e9.svg#icon-burger"></use>
+      </svg>
+    </button>
+
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#overview">Game Overview</a>
+        </li>
+
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#features">Features</a>
+        </li>
+
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#play">How to Play</a>
+        </li>
+
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#pixels">Behind the Pixels</a>
+        </li>
+
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#secrets"
+            >Easter Eggs & Hidden Secrets</a
+          >
+        </li>
+
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#developers">Developer’s Corner</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
+
+<div class="mobile-menu-overlay">
+  <div class="mobile-menu-container">
+    <button class="mobile-menu-close-btn">
+      <svg class="mobile-menu-close-icon" width="" height="">
+        <use href=""></use>
+      </svg>
+    </button>
+  </div>
+</div>
 
     <main>
       <section class="section">
@@ -48,19 +96,19 @@
   </div>
 </section>
 
-      <section></section>
+      <section id="overview"></section>
+
+      <section id="features"></section>
+
+      <section id="play"></section>
+
+      <section id="pixels"></section>
 
       <section></section>
 
-      <section></section>
+      <section id="secrets"></section>
 
-      <section></section>
-
-      <section></section>
-
-      <section></section>
-
-      <section></section>
+      <section id="developers"></section>
 
     </main>
     <footer></footer>
