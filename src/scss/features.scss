@@ -1,0 +1,104 @@
+.features .container {
+  background-image: url('../img/features/features-bg-block1.png'),
+    url('../img/features/features-bg-block2.png'),
+    url('../img/features/features-bg-block3.png'),
+    url('../img/features/features-bg-block4.png');
+
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 30px 44px, 45px 36px, 44px 30px, 40px 36px;
+  background-position: 100% 10%, 100% 33%, 100% 66%, 100% 100%;
+
+  @include media(desktop) {
+    background-size: 80px 116px, 121px 115px, 116px 80px, 121px 121px;
+    background-position: 77% 0, 100% 30%, 90% 60%, 95% 95%;
+  }
+
+  @media (min-resolution: 192dpi) {
+    background-image: url('../img/features/features-bg-block1-2x.png'),
+      url('../img/features/features-bg-block2-2x.png'),
+      url('../img/features/features-bg-block3-2x.png'),
+      url('../img/features/features-bg-block4-2x.png');
+  }
+}
+
+.features-list {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  &:nth-child(1) .thumb {
+    border-color: #f0e156;
+    box-shadow: 4px -2px 8px #f0e156;
+  }
+
+  &:nth-child(2) .thumb {
+    border-color: #972bdf;
+    box-shadow: 4px -2px 8px #972bdf;
+  }
+  &:nth-child(3) .thumb {
+    border-color: #51bc01;
+    box-shadow: 4px -2px 8px #51bc01;
+  }
+  &:nth-child(4) .thumb {
+    border-color: #f84d10;
+    box-shadow: 4px -2px 8px #f84d10;
+  }
+  &:nth-child(5) .thumb {
+    border-color: #d65553;
+    box-shadow: 4px -2px 8px #d65553;
+  }
+}
+
+.feature-item .thumb {
+  box-sizing: content-box;
+  border-radius: 10px;
+  border: 3px solid;
+  overflow: hidden;
+
+  @include media(desktop) {
+    border-radius: 20px;
+  }
+}
+
+.feature-img {
+  width: 50px;
+  height: 50px;
+
+  @include media(desktop) {
+    width: 160px;
+    height: 150px;
+  }
+}
+
+.feature-description {
+  width: 200px;
+
+  @include media(desktop) {
+    width: 890px;
+  }
+}
+
+.feature-title {
+  color: $_color_yellow;
+  font-size: 16px;
+  font-weight: bold;
+
+  @include media(desktop) {
+    font-size: 32px;
+  }
+}
+
+.feature-text {
+  margin-top: 8px;
+
+  @include media(desktop) {
+    margin-top: 16px;
+  }
+}
