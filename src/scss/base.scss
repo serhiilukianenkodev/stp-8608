@@ -36,3 +36,11 @@
     @include font(64, 64);
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 65px;
+}
