@@ -12,7 +12,7 @@
       />
     </a>
 
-    <button class="header-burger-menu-btn">
+    <button class="header-burger-menu-btn js-open-menu">
       <svg class="header-burger-menu-icon" width="32" height="32">
         <use href="./img/sprite.svg#icon-burger"></use>
       </svg>
@@ -50,12 +50,37 @@
   </div>
 </header>
 
-<div class="mobile-menu-overlay">
+<div class="mobile-menu-overlay js-menu-container" id="mobile-menu">
   <div class="mobile-menu-container">
-    <button class="mobile-menu-close-btn">
-      <svg class="mobile-menu-close-icon" width="" height="">
-        <use href=""></use>
-      </svg>
-    </button>
+    <div class="menu-wrapper">
+      <button class="mobile-menu-close-btn js-close-menu">
+        <svg class="mobile-menu-close-icon" width="16" height="16">
+          <use href="./img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#overview">Game Overview</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#features">Features</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#play">How to Play</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#pixels">Behind the Pixels</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#secrets">
+            Easter Eggs & Hidden Secrets
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#developers">Developer’s Corner</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
