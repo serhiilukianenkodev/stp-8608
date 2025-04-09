@@ -1,30 +1,93 @@
 .header {
-  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: $_color_blue;
+  border-radius: 0 0 10px 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  @include media(desktop) {
+    border-radius: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
 }
 
-// .nav-list {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   gap: 40px;
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-//   @include media(tablet) {
-//     justify-content: flex-start;
-//   }
+  @include media(desktop) {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}
 
-//   @include media(desktop) {
-//     justify-content: flex-end;
-//   }
-// }
+.header-logo {
+  @include media(desktop) {
+    width: 50px;
+    height: 50px;
+  }
+}
 
-// .nav-link {
-//   font-weight: 500;
-//   letter-spacing: 0.02em;
-//   @include font(30, 40);
-//   color: $_header_color;
-// }
+.header-burger-menu-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  transition: transform 250ms linear;
 
-// .nav-link:hover,
-// .nav-link:focus {
-//   color: $_header_accent_color;
-// }
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.header-burger-menu-btn:hover,
+.header-burger-menu-btn:focus {
+  transform: scale(1.05);
+}
+
+.header-nav {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid $_color_yellow;
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-family: $_font-family;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: $_color_yellow;
+  transition: border-color 250ms linear, background-color 250ms linear;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  border-color: transparent;
+  background-color: $_color_dark_blue;
+}
+
+.header-nav-link:active {
+  background-color: $_color_yellow;
+  color: #000;
+}
