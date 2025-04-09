@@ -1,13 +1,61 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <!-- <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+  <div class="container header-container">
+    <a href="./index.html">
+      <img
+        class="header-logo"
+        srcset="./img/header/logo.png 1x, ./img/header/logo@2x.png 2x"
+        src="./img/header/logo.png"
+        alt="page logo"
+        width="40"
+        height="36"
+        loading="lazy"
+      />
+    </a>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul> -->
-  </nav>
+    <button class="header-burger-menu-btn">
+      <svg class="header-burger-menu-icon" width="32" height="32">
+        <use href="./img/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#overview">Game Overview</a>
+        </li>
+
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#features">Features</a>
+        </li>
+
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#play">How to Play</a>
+        </li>
+
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#pixels">Behind the Pixels</a>
+        </li>
+
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#secrets"
+            >Easter Eggs & Hidden Secrets</a
+          >
+        </li>
+
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#developers">Developer’s Corner</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
+
+<div class="mobile-menu-overlay">
+  <div class="mobile-menu-container">
+    <button class="mobile-menu-close-btn">
+      <svg class="mobile-menu-close-icon" width="" height="">
+        <use href=""></use>
+      </svg>
+    </button>
+  </div>
+</div>
