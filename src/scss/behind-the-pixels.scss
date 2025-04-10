@@ -1,18 +1,11 @@
-.behind-the-pixels {
-  padding-bottom: 71px;
-
-  @include media(desktop) {
-    padding-bottom: 241px;
-  }
-}
-
-.behind-the-pixels {
+.behind-the-pixels .container {
+  padding-bottom: 55px;
   background-image: url('../img/pixels/pixels-bg-left-mob.png'),
     url('../img/pixels/pixels-bg-right-mob.png');
 
   background-repeat: no-repeat, no-repeat;
   background-size: 55px 65px, 55px 65px;
-  background-position: 0% calc(100% - 16px), 100% calc(100% - 16px);
+  background-position: 0% 100%, 100% 100%;
 
   @media (min-resolution: 192dpi) {
     background-image: url('../img/pixels/pixels-bg-left-mob-2x.png'),
@@ -20,11 +13,12 @@
   }
 
   @include media(desktop) {
+    padding-bottom: 193px;
+
     background-image: url('../img/pixels/pixels-bg-left-desk.png'),
       url('../img/pixels/pixels-bg-right-desk.png');
     background-size: 268px 343px, 268px 343px;
-    background-position: 60px calc(100% - 48px),
-      calc(100% - 60px) calc(100% - 48px);
+    background-position: 60px 100%, calc(100% - 60px) 100%;
 
     @media (min-resolution: 192dpi) {
       background-image: url('../img/pixels/pixels-bg-left-desk-2x.png'),
