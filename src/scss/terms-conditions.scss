@@ -1,0 +1,18 @@
+:root {
+  font-family: 'Lora', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  @include font(14, 18);
+  color: $_main_color;
+  background-color: $_main_bg_color;
+
+  @include media(desktop) {
+    @include font(24, 30);
+  }
+}
+
+@import './base.scss';
+@import './privacy-cookie-terms-header.scss';
+@import './term-conditions-main.scss';
+@import './footer.scss';

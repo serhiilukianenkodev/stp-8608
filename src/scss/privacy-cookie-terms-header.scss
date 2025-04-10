@@ -1,0 +1,42 @@
+.privacy-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @include media(desktop) {
+    padding-top: 24px;
+    padding-bottom: 30px;
+  }
+}
+
+.privacy-header-link {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 8px;
+  transition: transform 250ms linear;
+
+  @include media(desktop) {
+    column-gap: 16px;
+  }
+}
+
+.privacy-header-link:hover,
+.privacy-header-link:focus {
+  transform: scale(1.05);
+}
+
+.privacy-header-icon {
+  @include media(desktop) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.privacy-header-text {
+  font-weight: 400;
+  font-size: 12px;
+  color: $_color_yellow;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
