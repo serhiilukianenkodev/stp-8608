@@ -1,2 +1,55 @@
-* {
+.developers-section {
+  padding-top: 40px;
+  padding-bottom: 120px;
+
+  @include media(desktop) {
+    padding-top: 89px;
+    padding-bottom: 393px;
+  }
+}
+
+.developers-section {
+  width: 320px;
+  margin: 0 auto;
+  background-image: url('../img/developers-corner/background1-mobile.png'),
+    url('../img/developers-corner/background2-mobile.png'),
+    url('../img/developers-corner/background3-mobile.png');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 320px 115px, 15px 15px, 9px 11px;
+  background-position: 0px 183px, 210px 20px, 20px 20px;
+
+  @media screen and (min-resolution: 192dpi) {
+    background-image: url('../img/developers-corner/background1-mobile@2x.png'),
+      url('../img/developers-corner/background2-mobile@2x.png'),
+      url('../img/developers-corner/background3-mobile@2x.png');
+  }
+
+  @include media(desktop) {
+    width: 1200px;
+    background-image: url('../img/developers-corner/background1-desktop.png'),
+      url('../img/developers-corner/background2-desktop.png'),
+      url('../img/developers-corner/background3-desktop.png');
+
+    background-size: 1200px 300px, 40px 30px, 22px 22px;
+    background-position: 0px 300px, 715px 50px, 275px 60px;
+
+    @media screen and (min-resolution: 192dpi) {
+      background-image: url('../img/developers-corner/background1-desktop@2x.png'),
+        url('../img/developers-corner/background2-desktop@2x.png'),
+        url('../img/developers-corner/background3-desktop@2x.png');
+    }
+  }
+}
+
+.developers-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: $_main_color;
+  margin-top: 24px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    max-width: 712px;
+    margin: 48px auto 0;
+  }
 }
