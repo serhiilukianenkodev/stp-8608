@@ -1,0 +1,1 @@
+{"version":3,"file":"footer-a528a3b4.js","sources":["../../src/js/footer.js"],"sourcesContent":["document.querySelector('.current-year').innerHTML = new Date().getFullYear();\n"],"names":[],"mappings":"ssBAAA,SAAS,cAAc,eAAe,EAAE,UAAY,IAAI,KAAM,EAAC,YAAa"}
