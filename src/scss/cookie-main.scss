@@ -1,0 +1,89 @@
+.cookie-section {
+  @include media(desktop) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.last-section {
+  padding-bottom: 32px;
+
+  @include media(desktop) {
+    padding-bottom: 60px;
+  }
+}
+
+.cookie-title {
+  font-family: 'Lalezar', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #f4bf11;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 64px;
+    margin-bottom: 32px;
+  }
+}
+
+.cookie-sub-title {
+  font-family: 'Lalezar', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: $_main_color;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 32px;
+  }
+}
+
+.additional-margin {
+  margin-bottom: 16px;
+}
+
+.top-margin {
+  margin-top: 16px;
+}
+
+.cookie-text,
+.cookie-item,
+.cookie-sub-item {
+  font-size: 14px;
+  color: $_main_color;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.cookie-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.cookie-sub-list {
+  padding-left: 20px;
+  list-style-type: disc;
+
+  @include media(desktop) {
+    padding-left: 36px;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.break-long-link {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.cookie-sub-list-link {
+  text-decoration: underline;
+}
