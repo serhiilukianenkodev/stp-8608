@@ -1,0 +1,84 @@
+.how-to-play .container {
+  min-height: 212px;
+  background-image: url('../img/play/play-bg-mob.png');
+
+  background-repeat: no-repeat;
+  background-size: 136px 212px;
+  background-position: 100% 58%;
+
+  @media (min-resolution: 192dpi) {
+    background-image: url('../img/play/play-bg-mob-2x.png');
+  }
+
+  @include media(desktop) {
+    min-height: 816px;
+    background-image: url('../img/play/play-bg-desk.png');
+    background-size: 525px 816px;
+    background-position: 100% 50%;
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../img/play/play-bg-desk-2x.png');
+    }
+  }
+}
+
+.how-to-play-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 205px;
+  list-style: none;
+  counter-reset: list;
+  padding: 0;
+  margin: 24px 0 0 0;
+
+  @include media(desktop) {
+    width: 620px;
+    gap: 24px;
+    margin: 48px 0 0 0;
+  }
+}
+
+.play-item {
+  counter-increment: list;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: counter(list) '.';
+    background-color: #b9205f;
+    color: $_color_yellow;
+    border-radius: 15px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 35px;
+    height: 30px;
+    line-height: 32px;
+    margin-right: 8px;
+    font-family: $_second-family;
+    font-size: 16px;
+
+    @include media(desktop) {
+      border-radius: 31px;
+      min-width: 68px;
+      height: 62px;
+      margin-right: 24px;
+      font-size: 40px;
+    }
+  }
+}
+
+.play-title {
+  color: $_color_yellow;
+  font-size: 16px;
+  font-weight: bold;
+
+  @include media(desktop) {
+    font-size: 32px;
+  }
+}
+
+.play-text {
+  margin-top: 8px;
+}
