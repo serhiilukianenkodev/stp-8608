@@ -1,7 +1,12 @@
-.home .container {
-  padding-top: 84px;
+.home {
+  padding-top: 32px;
   @include media(desktop) {
-    padding-top: 160px;
+    padding-top: 96px;
+  }
+}
+
+.home .container {
+  @include media(desktop) {
     display: flex;
     gap: 24px;
     align-items: start;

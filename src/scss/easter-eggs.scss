@@ -1,0 +1,39 @@
+.easter-egg .container {
+  padding-top: 36px;
+  background-image: url('../img/easter/bg-block1-mob.png'),
+    url('../img/easter/bg-block2-mob.png');
+  background-repeat: no-repeat, no-repeat;
+  background-size: 75px 123px, 52px 79px;
+  background-position: 0 0, 100% 137px;
+
+  @media (min-resolution: 192dpi) {
+    background-image: url('../img/easter/bg-block1-mob-2x.png'),
+      url('../img/easter/bg-block2-mob-2x.png');
+  }
+
+  @include media(desktop) {
+    padding-top: 110px;
+    min-height: 410px;
+
+    background-image: url('../img/easter/bg-block1-desk.png'),
+      url('../img/easter/bg-block2-desk.png');
+    background-size: 222px 363px, 260px 390px;
+    background-position: 20px 0, 100% 20px;
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../img/easter/bg-block1-desk-2x.png'),
+        url('../img/easter/bg-block2-desk-2x.png');
+    }
+  }
+}
+
+.easter-description {
+  margin-top: 24px;
+
+  @include media(desktop) {
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 646px;
+  }
+}
