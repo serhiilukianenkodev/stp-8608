@@ -51,10 +51,10 @@
   font-weight: 400;
   font-size: 12px;
   color: $_main_color;
-  margin-left: 16px;
 
   @include media(desktop) {
     font-size: 16px;
+    margin-left: 16px;
   }
 }
 
