@@ -41,11 +41,16 @@
   text-align: center;
   gap: 5px;
   width: 215px;
-  padding: 20px;
+  padding: 16px;
   border-radius: 20px;
   font-size: 20px;
   background-color: $_color_orange;
   transition: background-color 250ms linear;
+
+  @include media(desktop) {
+    padding: 20px;
+    min-width: 359px;
+  }
 
   &:hover,
   &:focus {
