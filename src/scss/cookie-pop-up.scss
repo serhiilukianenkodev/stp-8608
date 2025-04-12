@@ -1,0 +1,125 @@
+.cookie-popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: $_color_blue;
+  border-radius: 20px 20px 0 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+  z-index: 1000;
+
+  @include media(desktop) {
+    padding-top: 90px;
+    padding-bottom: 95px;
+  }
+}
+
+.cookie-popup.show {
+  transform: translateY(0);
+}
+
+.cookie-popup-container {
+  @include media(desktop) {
+    display: flex;
+    gap: 116px;
+  }
+}
+
+.cookie-title-text-wrap {
+  @include media(desktop) {
+    max-width: 712px;
+  }
+}
+
+.cookie-popup-title {
+  font-family: 'Lalezar', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: $_color_yellow;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+}
+
+.cookie-popup-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: $_main_color;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+}
+
+.cookie-popup-buttons-list {
+}
+
+.cookie-popup-buttons-item {
+}
+
+.cookie-popup-buttons-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.cookie-btn {
+}
+
+.cookie-accept {
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #0973b3;
+  color: $_color_yellow;
+  border: 3px solid transparent;
+  border-radius: 15px;
+  padding: 16px 80px;
+  transition: border-color 250ms linear, background-color 250ms linear;
+
+  @include media(desktop) {
+    font-size: 24px;
+    border-radius: 20px;
+    padding: 20px 42px;
+  }
+}
+
+.cookie-accept:hover,
+.cookie-accept:focus,
+.cookie-decline:hover,
+.cookie-decline:focus {
+  border-color: $_color_yellow;
+}
+
+.cookie-accept:active {
+  background-color: #008d8b;
+  border-color: transparent;
+}
+
+.cookie-decline {
+  font-weight: 400;
+  font-size: 16px;
+  color: $_color_yellow;
+  border: 3px solid transparent;
+  border-radius: 15px;
+  padding: 16px 80px;
+  background-color: #053754;
+  transition: border-color 250ms linear;
+
+  @include media(desktop) {
+    font-size: 24px;
+    border-radius: 20px;
+    padding: 20px 38px;
+  }
+}
+
+.cookie-decline:active {
+  background-color: #072a3f;
+  border-color: transparent;
+}
